@@ -10,4 +10,5 @@ router.register(r'converter',views.ConverterApiView,basename='converter')
 urlpatterns = [
      path('test/',views.test,name='test'),
      path('',include(router.urls)),
+     path('upload/',views.uploadimage,name='upload'),
 ]
