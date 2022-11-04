@@ -11,4 +11,5 @@ urlpatterns = [
      path('test/',views.test,name='test'),
      path('',include(router.urls)),
      path('upload/',views.uploadimage,name='upload'),
+     path('display/',views.diplaypdf,name='diplaypdf')
 ]

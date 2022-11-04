@@ -18,6 +18,9 @@ import img2pdf
 def uploadimage(request):
     return render(request, 'index.html')
 
+def diplaypdf(request):
+    return HttpResponseRedirect("C:\Developer\Django practice\ImageToPdf\project\media\converted.pdf")
+
 
 def test(request):
     data = ImageData.objects.latest('id')
