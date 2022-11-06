@@ -16,6 +16,7 @@ import img2pdf
 
 
 def uploadimage(request):
+    """Upload given image to the database"""
     return render(request, 'index.html')
 
 def diplaypdf(request):
@@ -23,6 +24,7 @@ def diplaypdf(request):
 
 
 def test(request):
+    """Display latest uploaded image to the user"""
     data = ImageData.objects.latest('id')
     base = 'C:\Developer\Django practice\ImageToPdf\project'
     url = data.image.url
